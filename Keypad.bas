@@ -16,21 +16,21 @@ Dim Redled As Byte , Greenled As Byte , Amberled As Byte , Code As Integer
 Dim Code_p As Integer , Kanal1 As Byte , Kanal2 As Byte , Timeout As Byte , Feil As Integer
 Dim Eeprom As Eram Integer , Program As Byte , Feil_a As Byte
 
-'Inn
-'PD2 Tastatur 1
-'PD3 Tastatur 2
-'PD4 Tastatur 3
-'PD5 Tastatur 4
+'Inputs
+'PD2 Keypad R1
+'PD3 Keypad R2
+'PD4 Keypad R3
+'PD5 Keypad R4
 
-'Ut
-'PB0 Tastatur 1
-'PB1 Tastatur 2
-'PB2 Tastatur 3
-'PB3 Kanal 1
-'PB4 Kanal 2
-'PB5 Grønn LED
-'PB6 Rød LED
-'PB7 Lifesignal(til Msmu2)
+'Outputs
+'PB0 Keypad K1
+'PB1 Keypad K2
+'PB2 Keypad K3
+'PB3 Mode 1 signal
+'PB4 Mode 2 signal
+'PB5 Green LED indicator
+'PB6 Red LED indicator
+'PB7 Lifesignal
 
 Code_p = Eeprom                                             'Get stored code
 If Code_p < 0 Then Code_p = 1234                            'If no code use default
